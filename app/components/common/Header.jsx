@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/images/Logo.svg";
+import Logo from "@/public/images/logo.svg";
 import ProfileImg from "@/public/images/profile.svg";
 import NotificationBell from "./NotificationBell";
 import { usePathname } from "next/navigation";
