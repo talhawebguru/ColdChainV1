@@ -1,10 +1,10 @@
-import LeftHeader from "../components/common/LeftHeader";
+import SideBar from "../components/common/SideBar";
 
 const page = () => {
   return (
     <>
       <div className="flex">
-        <LeftHeader />
+        <SideBar/>
         <h1>Profile</h1>
       </div>
     </>

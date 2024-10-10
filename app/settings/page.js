@@ -1,3 +1,4 @@
+import React from "react";
 import SideBar from "../components/common/SideBar";
 
 const page = () => {
@@ -5,7 +6,7 @@ const page = () => {
     <>
       <div className="flex">
         <SideBar/>
-        <h1>DashBoard</h1>
+        <h1>settings</h1>
       </div>
     </>
   );

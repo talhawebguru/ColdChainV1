@@ -31,7 +31,14 @@ const RightSideMenu = () => {
           />
         </div>
         <SearchInput />
-        <Cards />
+        <Cards
+      trackerNumber="40376"
+      trackerId="1644421181"
+      driverName="Charles P."
+      temperature={12}
+      humidity={50}
+      status="Active"
+    />
       </div>
     </>
   );

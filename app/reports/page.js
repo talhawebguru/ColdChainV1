@@ -1,11 +1,12 @@
-import LeftHeader from "../components/common/LeftHeader"
+import SideBar from "../components/common/SideBar"
+import MainPage from "../components/reports/MainPage"
 
 const page = () => {
   return (
     <>
       <div className="flex">
-        <LeftHeader />
-        <h1>Reports</h1>
+        <SideBar />
+        <MainPage/>
       </div>
     </>
   )
