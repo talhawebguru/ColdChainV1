@@ -13,16 +13,17 @@ const RightSideBar = () => {
         <h1 className="text-[#232323] pl-6 text-lg font-medium font-['Inter'] tracking-tight">
           Vehicles Report
         </h1>
+        {/* Report Form Start Here */}
         <div className="px-6 mt-10">
           <form className="flex flex-wrap gap-4">
-            <div className="relative">
+            <span className="relative">
               <FiSearch
                 size={18}
                 aria-label="Search Icon"
                 className="absolute z-10 top-[71%] left-[8%] -translate-x-[50%] -translate-y-[50%]"
               />
               <InputFields id="search" label="Search Input" type="search" hasIcon />
-            </div>
+            </span>
             <SelectFields
               id="company"
               label="Company"
@@ -43,10 +44,13 @@ const RightSideBar = () => {
               label="Period"
               options={["Select", "Period 1", "Period 2", "Period 3"]}
             />
-            <InputFields id="from-date" label="From" type="date" />
-            <InputFields id="to-date" label="To" type="date" />
+            <InputFields id="from-date" label="From :" type="date" />
+            <InputFields id="to-date" label="To :" type="date" />
           </form>
         </div>
+        {/* Vehicle Report end here */}
+      <hr className="border mt-10" />
+      {/* Data Report Show Here Start */}
       </div>
     </>
   );
