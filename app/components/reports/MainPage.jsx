@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Tabs from "./Tabs";
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
 import StoreLeftSideBar from "./StoreLeftSideBar";
 import StoreRightSideBar from "./StoreRightSideBar";
+import Tabs from "../common/Tabs";
 
 const MainPage = () => {
   const [activeTabReports, setActiveTabReports] = useState("Frights");
@@ -19,19 +19,21 @@ const MainPage = () => {
   return (
     <div className="p-6 w-full">
       {/* Top Tabs Start Here */}
-      <div className="flex">
-        {tabs.map((tab) => (
+      <div className="flex max-w-[400px]">
+          {tabs.map((tab,index) => (
           <Tabs
             key={tab}
             isActive={activeTabReports === tab}
             label={tab}
             onClick={handleTabClickReports}
+            isFirst={index === 0}
+            isLast={index === tabs.length - 1}
           />
         ))}
       </div>
       {/* Top Tabs End here */}
       {/* Main Page Start here */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {activeTabReports === "Frights" && (
           <motion.div
             key="frights"

@@ -1,11 +1,12 @@
 import SideBar from "../components/common/SideBar";
+import MainPage from "../components/profile/MainPage";
 
 const page = () => {
   return (
     <>
       <div className="flex">
         <SideBar/>
-        <h1>Profile</h1>
+        <MainPage/>
       </div>
     </>
   );
