@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProfileCard from "./ProfileCard";
@@ -54,7 +54,7 @@ const MainPage = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="col-span-7"
+            className="col-span-8"
           >
             <ProfileData profile={profile} />
           </motion.div>

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -72,6 +73,7 @@ const ProfileData = ({ profile }) => {
               type="password"
               id="password"
               placeholder="Jordan009B"
+              autoComplete="on"
               defaultValue={profile.password}
               className="max-w-full p-2.5 bg-[#efefef] focus:outline-none focus:border-blue-500 rounded border border-[#d3d3d3]"
               aria-label="Password"

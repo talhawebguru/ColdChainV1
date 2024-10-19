@@ -8,7 +8,7 @@ import NavItem from "./NavItem";
 
 const SideBar = () => {
   return (
-    <div className="w-20 h-[89.4vh] bg-white border-r border-[#e3e3e3] flex flex-col gap-8 pt-10">
+    <div className="min-w-20 h-[89.4vh] bg-white border-r border-[#e3e3e3] flex flex-col gap-8 pt-10">
       <NavItem href="/" icon={GoHomeFill} label="Home" />
       <NavItem href="/dashboard" icon={RxDashboard} label="Dashboard" />
       <NavItem href="/reports" icon={RiBarChartBoxLine} label="Reports" />

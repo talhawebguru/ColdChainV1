@@ -5,6 +5,7 @@ import Logo from "@/public/images/logo.svg";
 import ProfileImg from "@/public/images/profile.svg";
 import NotificationBell from "./NotificationBell";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Header = () => {
   const pathname = usePathname();
@@ -32,9 +33,11 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-6">
           <NotificationBell />
+          <Link href={"/profile"}> 
           <div className="w-14 h-14 border border-[#f3f3f3] rounded-full">
             <Image src={ProfileImg} alt="User Profile" priority />
           </div>
+          </Link>
         </div>
       </div>
     </div>
