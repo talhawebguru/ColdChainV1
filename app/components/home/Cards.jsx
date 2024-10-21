@@ -27,7 +27,7 @@ const Cards = ({ trackerNumber, trackerId, driverName, temperature, humidity, st
       <div className="flex flex-col items-end gap-6">
         <StatusBadge status={status} />
         <div>
-          {type === "vehicles" ? (
+          {type === "Bus" || type === "Truck" || type === "Car" ? (
             <Image src={TruckIcon} alt="Truck Icon" loading="eager" priority />
           ) : (
             <Image src={StoreIcon} alt="Store Icon" loading="eager" priority />

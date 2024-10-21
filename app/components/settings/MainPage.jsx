@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReportsTables from "../reports/ReportsTables";
 import Tabs from "../common/Tabs";
+import CompanyTable from "./CompanyTable";
 
 const MainPage = () => {
   const [activeTabSettings, setActiveTabSettings] = useState("Company");
@@ -40,7 +41,7 @@ const MainPage = () => {
         >
             <h1 className="p-1 py-6 text-[#232323] text-2xl font-medium font-['Inter'] tracking-tight">{activeTabSettings}</h1>
 
-             <ReportsTables/>
+             <CompanyTable/>
         </motion.div>
 
         )}
