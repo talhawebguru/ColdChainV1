@@ -1,11 +1,12 @@
 import SideBar from "../components/common/SideBar";
+import MainPage from "../components/dashboard/MainPage";
 
 const page = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex overflow-hidden">
         <SideBar/>
-        <h1>DashBoard</h1>
+        <MainPage/>
       </div>
     </>
   );
